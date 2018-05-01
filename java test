@@ -1,0 +1,165 @@
+1.what are the imp. feature of jdk 8?
+Ans.plateformindependent,robust,secure
+
+2.what is jvm.Is it plateform independent?
+Ans. -jvm stands for Java Virtual Machine
+     -jvm is used to run bytecode.
+     yes jvm is plateform independent
+
+3.what is diff b/w jdk jre and jvm?
+
+4.which class is super class of all the classes
+ans java.lang
+
+5.why java doesnt support multiple inheritence?
+Ans.In multiple inheritence one class can inherit the properties of the two or more classes,and we call the properties of the inherited class sometimes it creates ambiguty error.
+
+6.why java is not pure oops lang.
+java is not a pure oops lag.because it contains primitive data types
+Ans.Java does not contain the feature of pointers
+
+7.diff b/w overloading and overriding.can we overload the main method?
+ans.Overloading can be applied on constructors and methods.
+   -In method overloading the name of the methods should be same   but the paremetres should be different.
+   -In constructor overloading the name of the constructor is as    that of class and we call the parameterised constructor in    default constructor by using this key word.
+  -In method overriding the name of the method can be diffrent but    the parametre should be same.
+
+  No we can not overload the main method.
+8.what are diffrent access modifire explian with practicle example
+   diff b/w access modifire and identifire.
+Ans. There are the types of access modifires that are public,protected and private
+ Public can be accessed any where.
+ Private is accessed only within the class.
+ Protected is accessed within the class and the class which inherit its feature.
+9.diff b/w final and static keyword?
+Ans.final is a keyword which is used to make the value remain same throughout the program.
+Static
+
+10.can we declare a class as static?
+Ans. Yes we can declare a class as Ststic.
+
+11.diff b/w abstract classes and interfaces
+Ans.Interfaces contain the methods without its body.
+Abstract classes does not have objects and it can caontain methods with body and without body.
+
+12.what is wrapper classes
+13.what are aynonms class
+14.what is ternariy opertator explain with ex.
+explain super,this,garbage collection,pass by value,pass by reference
+15.WAp to print the duplicate elements of an array.
+Ans.
+
+package DEMO;
+
+public class DuplicateValue 
+
+
+{
+	int num[]= {20,16,24,24};
+	
+	public void check()
+	{ 
+	 for(int j=0;j<3;j++)
+		{
+		  for( int i=0;i<3-j;i++)
+		 {
+			if(num[i]==num[i+1])
+			{
+				System.out.println("Duplicate value is"+num[i]);
+			}
+		 }
+		
+		
+		}
+	}
+	
+	
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		DuplicateValue ob=new DuplicateValue();
+		ob.check();
+
+	}
+
+}
+16.wap to check a string is palindrome or not.
+package DEMO;
+
+import java.util.Scanner;
+
+public class StringPalindrome
+{int i,len;
+	String a ,b="";
+	Scanner ob=new Scanner(System.in);
+	public void check()
+	{ 
+		System.out.println("Enter a string");
+		a=ob.next();
+		
+		len=a.length();
+		
+	 for(int i=len-1;i>=0;i--)
+		{
+		 b=b+a.charAt(i);
+		 
+		} 
+		  
+			if(a.equals(b))
+			{
+				System.out.println("String is palindrome");
+			}
+			else
+			{
+				System.out.println("String is not palindrome");
+		 
+		
+		
+		}
+	}
+
+	public static void main(String[] args) {
+		StringPalindrome ob=new StringPalindrome();
+		ob.check();
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
+
+17.wap to print triangle
+15.wap to print series of prime no. b/w 1-100.
+Ans
+
+package DEMO;
+
+
+public class Primelist {
+	int n=100,i,j;
+	public void acc()
+	{
+		for(i=2;i<=n;i++)
+		{
+			for(j=2;j<i;j++)
+			{
+				if(i%j==0) 
+				{
+					break;
+				}
+			}
+			if(i==j)
+			{
+			System.out.println("\n"+i);
+			}
+		}
+	
+	
+}
+
+
+public static void main(String ar[])
+{
+	Primelist ob=new Primelist();
+	ob.acc();
+}}
